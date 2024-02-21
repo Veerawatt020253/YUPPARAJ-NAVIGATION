@@ -1,0 +1,110 @@
+@font-face {
+    font-family: ibm;
+    src: url(./Framework/font/IBMPlexSansThai-Medium.ttf);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(247, 81, 186);
+    border-radius: 4px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* background: url(./img/bg-1.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; */
+}
+
+body {
+    text-shadow: 0px 0px 3px black;
+    font-family: ibm;
+    margin: 0px;
+    padding: 0px;   
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo-img {
+    margin: 0px;
+    padding: 0px;
+    border: 2px solid white;
+    border-radius: 100%;
+    /* width: 25%;
+    height: 25%; */
+}
+
+.menu {
+    transition: all 0.3s;
+    box-shadow: 2px 2px 15px black;
+    background-color: white;
+    border-radius: 15px;
+    text-shadow: 0px 0px 0px white !important;
+    font-size: larger;
+}
+
+.mb-6 {
+    margin-bottom: 5rem !important;
+}
+
+.img {
+    box-shadow: 2px 2px 15px black;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #ff007b;
+    border: #ff007b solid 1px;
+}
+
+.btn-primary:hover {
+    background-color: #cc0163;
+    border: #ff007b solid 1px;
+}
+
+#loader {
+    border: 12px solid #f3f3f3;
+    /* border-radius: 50%; */
+    border-radius: 100%;
+    border-top: 12px solid #ff007b;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.map {
+    transition: all 0.3s;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px black;
+}
